@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+#cabecera {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+#menu {
+    background-color: #2ecc71;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+#seccion {
+    padding: 20px;
+}
+
+article {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.filtros1, .filtros2, .filtros3, .filtros4, .filtros5 {
+    filter: grayscale(100%);
+}
+
+.fondo {
+    background-color: #ecf0f1;
+}
+
+.degradado {
+    background: linear-gradient(to right, #3498db, #2ecc71);
+    color: #fff;
+    padding: 10px;
+}
+
+.radial {
+    background: radial-gradient(circle, #e74c3c, #3498db);
+    color: #fff;
+    padding: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    text-align: center;
+}
+
+#pie {
+    background-color: #34495e;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.filtros1:hover {
+    filter: grayscale(0%);
+    transition: filter 0.5s ease-in-out;
+}
+
+.filtros2{
+        width: 200px;
+        transition: transform 0.3s ease;
+}
+
+.filtros2:hover {
+        transform: scale(1.2);
+}
+
+.filtros3{
+        width: 200px;
+        transition: opacity 0.3s ease;
+}
+
+.filtros3:hover {
+        transform: translateX(20px);
+}
+
+.filtros4{
+    width: 200px;
+      transition: transform 0.3s ease;
+    }
+
+.filtros4:hover {
+      transform: translateY(-20px);
+}
+
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+.rotate{
+    animation: rotate 2s linear infinite;
+}
+
+.degradado, .radial {
+    transition: background 0.5s ease-in-out;
+}
+
+.degradado:hover, .radial:hover {
+    background: #fff;
+    color: #333;
+}

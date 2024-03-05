@@ -1,0 +1,80 @@
+body{
+    width: 90%;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+
+table, tr, th, td{
+    background-color: wheat;
+    border: 1px solid brown;
+    border-collapse: collapse;
+}
+
+table{
+    width: 80%;
+}
+
+colgroup>col.col1{
+    width: 40%;
+}
+
+colgroup>col.col2{
+    width: 20%;
+}
+
+colgroup>col.col3{
+    width: 20%;
+}
+
+legend.superior{
+    border: 1px solid red;
+}
+
+caption{
+    background-color: aqua;
+    font-family: serif;
+}
+
+tr.centrar td{
+    text-align: center;
+}
+
+tr.mayus td{
+    background-color: goldenrod;
+    color: darkmagenta;
+    font-style: italic;
+    font-size: x-large;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.recuerda{
+    background-color: lightcoral;
+    font-style: italic;
+}
+
+td.af{
+    background-color: gray;
+}
+
+td.crosa{
+    text-align: center;
+    background-color: magenta;
+}
+
+.af1{
+    border: 2px solid blue;
+}
+
+.af2{
+background-color: lightcoral;
+}
+
+legend.fondoverde{
+    background-color: lightgreen;
+}
+
+.rosa{
+    background-color:mediumorchid;
+}

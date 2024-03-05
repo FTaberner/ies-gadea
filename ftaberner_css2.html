@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario de Alumno</title>
+        <link rel="stylesheet" href="./ftaberner_css2.css">
+    </head>
+    <body>
+        <form action="./validado.php" method="post">
+            <fieldset><legend class="superior">IES SALVADOR GADEA</legend>
+            <h2>FICHA DE ALUMNO DE DAW</h2>
+            <table>
+                <caption class="titulo">PERSONAL DE ALUMNO DE DAW</caption>
+                <tr class="centrado">
+                    <td colspan="2">FICHA PERSONAL DEL ALUMNO</td>
+                </tr>
+                <tr>
+                    <td>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required><br>
+                    </td>
+                    <td>
+                    <label for="apellido">Apellidos:</label>
+                    <input type="text" id="apellido" name="apellido" required><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><fieldset><legend>Fecha de Nacimiento</legend>
+                        <label for="cumple"></label>
+                        <input type="date" id="cumple" name="cumple" required>
+                    </fieldset></td>
+                    <td><fieldset>
+                        <label for="sexo" class="campos">Sexo del Alumno:</label>
+                        <input type="radio" id="sexo" name="sexo" value="Masculino">Masculino
+                        <input type="radio" id="sexo" name="sexo" value="Femenino">Femenino
+                        <input type="radio" id="sexo" name="sexo" value="Otro">Otro
+                    </fieldset></td>
+                </tr>
+                <tr>
+                    <td><fieldset><legend align="center">NIA</legend>
+                        <label for="nia"></label>
+                        <input type="number" id="nia" name="nia" required maxlength="8"><br>
+                    </fieldset></td>
+                    <td><fieldset><legend align="center">D.N.I.</legend>
+                        <label for="dni"></label>
+                        <input type="text" id="dni" name="dni" required maxlength="9" pattern="[0-9]{8},[A-Z]{1}"><br>
+                    </fieldset></td>
+                </tr>
+                <tr>
+                    <td><label for="centroorigen" class="campos">Centro y curso anterior:</label>
+                    <input type="text" id="centroorigen" name="centroorigen" required></td>
+                    <td><label for="vivienda" class="campos">Localidad de residencia:</label>
+                    <input type="text" id="vivienda" name="vivienda" required></td>
+                </tr>
+                <tr class="unidascolumnas"><td colspan="2"></td></tr>
+                <tr class="centrado">
+                    <td colspan="2">RESULTADOS DE LA PRIMERA EVALUACIÓN</td>
+                </tr>
+                <tr class="unidascolumnas"><td colspan="2"></td></tr>
+                <tr>
+                    <td><label for="matriculado">Módulos Matriculados:</label>
+                    <input type="range" id="matriculado" name="matriculado" min="0" max="10" step="1" value="10"></td>
+                    <td><label for="personal">Valoración personal:</label>
+                    <input type="range" id="personal" name="personal" min="0" max="10" step="1" value="7"><br>
+                    <label for="satisfecho">Nivel de satisfacción:</label>
+                    <input type="range" id="satisfecho" name="satisfecho" min="0" max="10" step="1" value="7"></td>
+                </tr>
+                <tr class="centrado">
+                    <td colspan="2">VALORACIÓN DE ASIGNATURAS</td>
+                </tr>
+                <tr>
+                <td><label for="mas" class="titulos">Te gustan más:</label>
+                    <hr>
+                        <input type="checkbox" value="sistemasInformaticos">Sistemas informáticos</option><br>
+                        <input type="checkbox" value="baseDeDatos">Base de Datos</option><br>
+                        <input type="checkbox" value="programacion">Programación</option><br>
+                        <input type="checkbox" value="lmsgi">LMSGI</option><br>
+                        <input type="checkbox" value="entornosdesarrollo">Entornos de Desarrollo</option><br>
+                        <input type="checkbox" value="ingles">Inglés</option><br>
+                        <input type="checkbox" value="fol">FOL</option>
+                    </select><br></td>
+                    <td>
+                        <label for="menos" class="titulos">Te gustan menos:</label>
+                        <hr>
+                            <input type="checkbox" value="sistemasInformaticos">Sistemas informáticos</option><br>
+                            <input type="checkbox" value="baseDeDatos">Base de Datos</option><br>
+                            <input type="checkbox" value="programacion">Programación</option><br>
+                            <input type="checkbox" value="lmsgi">LMSGI</option><br>
+                            <input type="checkbox" value="entornosdesarrollo">Entornos de Desarrollo</option><br>
+                            <input type="checkbox" value="ingles">Inglés</option><br>
+                            <input type="checkbox" value="fol">FOL</option>
+                </td>
+                </tr>
+                <tr><td><hr></td></tr>
+                <tr>
+                    <td><label for="razona" class="titulos">RAZONA TUS RESPUESTAS</label></td>
+                    <td><textarea name="razona" id="razona" cols="30" rows="10"></textarea></td>
+                </tr>
+                <tr class="unidascolumnas"><td colspan="2"></td></tr>
+                <tr class="centrado">
+                    <td colspan="2">INFORMACIÓN DOCUMENTAL</td>
+                </tr>
+                <tr>
+                    <td><label for="fichero" class="titulos">Curriculum Vitae (PDF/DOCX)</label><br>
+                    <input type="file" accept=".pdf, .docx" value="fichero"></td>
+                    <td><label for="foto" class="titulos">Foto pequeña</label>
+                    <input type="file" accept=".jpg, .jpeg, .png" value="foto"></td>
+                </tr>       
+                <tr class="centrado">
+                    <td colspan="2">VALIDACIÓN Y ENVÍO</td>
+                </tr>
+                <tr>
+                    <td><fieldset><legend>Enviar</legend><button type="submit" value="Enviar"><img src="./imagenes/envia.png" width="40px"></button></fielset></td>
+                    <td><fieldset><legend>Reintentar / Borrar</legend><button type="reset"><img src="./imagenes/borrar.png" width="40px"></button></fieldset></td>
+                </tr>
+            </table>
+        </fieldset>
+        </form>
+    
+    </body>
+</html>

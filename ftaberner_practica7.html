@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="./Script/ftaberner_practica7.css">
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <th>Francisco Javier</th>
+                <th>Taberner</th>
+                <th>Aliaga</th>
+            </tr>
+            <tr>
+                <td colspan="2"><p>Introducir una edad rn 16 y 40 (18 por dedefecto)</p></td>
+            </tr>
+            <tr>
+                <td colspan="1"><label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" min="16" max="40" value="18"></td>
+            </tr>
+            <tr>
+                <td colspan="3"><p class="cursiva">Entrada tipo checkbox</p></td>
+            </tr>
+            <tr>
+                <td><p>Edad del alumno:</p></td>
+                <td colspan="2">
+                    <input type="checkbox" value="16">16 Años</input><br>
+                    <input type="checkbox" value="17">17 Años</input><br>
+                    <input type="checkbox" value="18">18 Años</input><br>
+                    <input checked type="checkbox" value="19">19 Años</input><br>
+                    <input type="checkbox" value="20">20 Años</input>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <fieldset>
+                    <legend>Indique la mascota que tiene en casa:</legend>
+                    <p>Lista de botones radio:</p>
+                    <input type="radio" id="perro" name="mascota" value="perro">Perro</input>
+                    <input type="radio" id="gato" name="mascota" value="gato">Gato</input>
+                    <input type="radio" id="roedor" name="mascota" value="roedor">Roedor</input></fieldset>
+                
+                </td>
+            </tr>
+            <tr>
+                <td class="depocol">
+                    USO DE SELECT Y OTRAS FORMAS DE INPUT
+                </td>
+                <td colspan="2" rowspan="2">
+                    <fieldset>
+                    <legend>otros input</legend>
+                    <label for="correo">Correo electrónico:</label>
+                     <input type="email" id="correo" name="correo" placeholder="Introduce un correo válido"></fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <select id="sport" name="sport">
+                    <option value="sport">Fútbol</option>
+                    <option value="sport">Fútbol Sala</option>
+                    <option value="sport">Básquetbol</option>
+                    <option value="sport">Hockey</option>
+                    <option value="sport">Tenis</option>
+                    <option value="sport">Pilota Valenciana</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <fieldset>
+                    <legend>USO DE FICHEROS</legend>
+                    <label for="archivo">Seleccione un archivo PDF:</label><br>
+                    <input type="file" id="archivo" name="archivo" accept=".pdf"></fieldset>
+                </td>
+                <td>
+                    <fieldset>
+                    <legend>USO DE IMAGENES - SÓLO JPG Y PNG</legend>
+                    <label for="imagen">Seleccione una imagen (JPG o PNG):</label><br>
+                    <input type="file" id="imagen" name="imagen" accept=".jpg, .png"></fieldset>
+                </td>
+                <td>
+                    <label for="dni">DNI:</label><br>
+                    <input type="text" id="dni" name="dni" pattern="[0-9]{8}[A-Za-z]{1}" placeholder="9 números y 1 letra">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p class="cursiva">Comentario adicional para usar corrector</p>
+                </td>
+                <td>
+                    <label for="comentario">Sugerencias Personales:</label><br>
+                    <textarea id="comentario" name="comentario" rows="4" cols="50" placeholder="Escribe un comentario con errores para probar"></textarea>
+                </td>
+            </tr>
+    </table>
+        <button type="submit"><img src="./imagenes/envia.png" width="100px"></button>
+        <button type="reset"><img src="./imagenes/borrar.png" width="40px">Borrar</button>
+    </form>
+</body>
+</html>

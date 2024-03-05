@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="formacion" content="width=device-width, initial-scale=1.0">
+    <title>Formalurio</title>
+    <link rel="stylesheet" href="ftaberner_css5.css">
+</head>
+<body>
+    <form action="ftaberner_css5.php" method="post">
+        <fieldset>
+            <legend class="superior">PARTE 6 - EXAMEN PRÁCTICO</legend>
+            <table>
+                <caption>TABLA-FORMULARIO DEL EXAMEN</caption>
+                <tr>
+                    <td>(1)</td>
+                    <td>(2)</td>
+                    <td>(3)</td>
+                </tr>
+                <tr class="centrar">
+                    <td colspan="2">TABLAS</td>
+                    <td>FORMULARIOS</td>
+                </tr>
+                <tr class="mayus">
+                    <td colspan="3">FORMULARIO PERSONAL DEL ALUMNO</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label for="nombre">Nombre del alumno</label>
+                        <input type="text" maxlength="30" placeholder="INTRODUZCA COMO MAX" pattern="[A-Z]+" id="nombre" required></td>
+                    <td>INTRODUZCA COMO MÁXIMO 30 CARÁCTERES SÓLO EN MAYÚSCULA</td>
+                </tr>
+                <tr>
+                    <td colspan="3"><label for="apellido">Apellidos: </label>
+                    <input type="text" maxlength="40"  placeholder="Máximo de 40 carácteres" pattern="[a-zA-Z]+" id="apellido" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label for="correo">Correo Electrónico (formato válido)</label>
+                    <input type="email" placeholder="Ej. usuario@iesgadea.es" required></td>
+                    <td class="recuerda">Recuerda: Los correos tienen que ser válidos para poder validarlos</td>
+                </tr>
+                <tr>
+                    <td><label for="cumple">DECHA DE NACIMIENTO</label>
+                    <input type="date" id="cumple" required></td>
+                    <td colspan="2"><label for="formacion" required>Formación Actual</label><br>
+                    <input type="radio" name="formacion" id="formacion" value="Sin titulacion">Básicos (sin titulación)<br>
+                    <input type="radio" name="formacion" id="formacion" value="ESO/Basica">E.S.O./FP BÁSICA<br>
+                    <input type="radio" name="formacion" id="formacion" value="Grado Medio"> GRADO MEDIO<br>
+                    <input type="radio" name="formacion" id="formacion" value="Grado Superior">GRADO SUPERIOR<br>
+                    <input type="radio" name="formacion" id="formacion" value="Universidad">UNIVERSITARIOS
+                </td>
+                </tr>
+                <tr>
+                    <td class="af"><fieldset><legend class="af1">AFICIONES</legend><label for="afi1">DEPORTES</label>
+                    <select id="afi1">
+                        <option value="fútbol">fútbol</option>
+                        <option value="Fútbol Sala">Fútbol Sala</option>
+                        <option value="Básquetbol">Básquetbol</option>
+                        <option value="Hockey">Hockey</option>
+                        <option value="Tenis">Tenis</option>
+                        <option value="Tenis">Tenis</option>
+                    </fieldset></td>
+                    <td class="crosa"> Elige un deporte en el despegable de tu izquierda o tu derecha</td>
+                    <td class="af"><fieldset><legend class="af2">AFICIONES</legend>
+                    <input type="checkbox" id="afi2" value="fútbol">fútbol<br>
+                    <input type="checkbox" id="afi2" value="Fútbol Sala">Fútbol Sala<br>
+                    <input type="checkbox" id="afi2" value="Básquetbol">Básquetbol<br>
+                    <input type="checkbox" id="afi2" value="Hockey" checked>Hockey<br>
+                    <input type="checkbox" id="afi2" value="Tenis">Tenis<br>
+                    <input type="checkbox" id="afi2" value="Tenis">Tenis<br>
+                    </fieldset></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><fieldset><legend class="fondoverde">SUBIR FICHEROS ADICIONALES</legend></fieldset><br>
+                    <label for="pdf">CURRICULUM VITAE (PDF)</label>
+                    <input type="file" id="pdf" accept=".pdf"></td>
+                    <td><fieldset><legend class="fondoverde">SUBIR FICHEROS ADICIONALES</legend></fieldset><br>
+                    <label for="foto"></label>
+                    <input type="file" id="foto" accept=".jpg, .png, .jpeg"></td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="rosa"><label for="observar">OBSERVACIONES</label>
+                    <textarea id="observar" cols="30" rows="10"></textarea></td>
+                </tr>
+                <tr>
+                    <td><button type="submit"><img src="./imagenes/envia.png" width="40px">Enviar</button></td>
+                    <td><button type="reset"><img src="./imagenes/borrar.png" width="40px">Borrar</button></td>
+                    <td><img src="./imagenes/HTML5_logo.png" width="40px"><a href="http://iesgadea.es/daw/lmsgi/2023-daw/ftaberner/index">Regresar Menú</a></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>

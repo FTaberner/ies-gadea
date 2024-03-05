@@ -1,0 +1,111 @@
+
+@font-face {
+    font-family: 'lemon_milk';
+    src: url('ruta/a/tu/lemon_milk.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+tr td:nth-child(1),
+tr th:nth-child(1),
+tr td:nth-child(3),
+tr th:nth-child(3),
+tr td:nth-child(4),
+tr th:nth-child(4),
+tr td:nth-child(6),
+tr th:nth-child(6) {
+  width: 20%;
+}
+
+tr td:nth-child(2),
+tr th:nth-child(2),
+tr td:nth-child(5),
+tr th:nth-child(5) {
+  width: 10%;
+}
+
+table {
+    width: 85%;
+    margin: 5px;
+    padding: 5px;
+    border-collapse: collapse;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: blue;
+    text-align: justify;
+    background-image: url(../imagenes/fondo.jpg);
+    background-size: cover;
+    box-sizing: border-box;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  table {
+    background-color: #f0f0f0;
+  }
+  
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.regla{
+    background-image: url(../imagenes/fondo_claro_azul.jpg);
+    background-size: cover;
+    border: 4px groove blue;
+}
+table tr:nth-child(odd) {
+    background-color: lightcoral;
+}
+
+table tr:nth-child(even) {
+    background-color: khaki;
+}
+
+table td:first-child {
+    background-color: white;
+}
+
+table thead tr:first-child {
+    background-color: white;
+}
+
+body {
+    font-family: 'lemon_milk', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li::before {
+    content: "\25BA";
+    display: inline-block;
+    width: 1em;
+    margin-right: 0.5em;
+  }
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: static;
+    width: 100%;
+    margin-top: 20px;
+}

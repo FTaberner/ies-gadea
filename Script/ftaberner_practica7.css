@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+}
+form table {
+    width: 85%;
+    border-collapse: collapse;
+}
+
+table {
+    border: 1px solid #B0252C;
+    padding: 8px;
+    background-color: #FFF9DE;
+}
+
+th {
+    border: 1px solid #B0252C;
+    background-color: #FED93D;
+}
+
+tr {
+    border: 1px solid #B0252C;
+}
+td {
+    border: 1px solid #B0252C;
+}
+.cursiva {
+    font-style: italic;
+    text-align: center;
+}
+.depocol {
+    border: 1px solid #2D01A6;
+}
